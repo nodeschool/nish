@@ -1,0 +1,21 @@
+baseURL: ""
+title: "Nodeschool Nish"
+languageCode: "en-us"
+
+permalinks:
+  post: /:title/
+
+
+theme: 'nodeschool'
+defaultExtension: "html"
+paginate: 10
+
+publishDir: docs
+enableEmoji: true
+buildDrafts: false
+disablePathToLower: true
+summaryLength: 70
+watch: true
+uglyURLs: false
+disableSitemap: true
+# disableKinds: ["sitemaps"]
