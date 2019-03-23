@@ -1,10 +1,13 @@
-baseURL: ""
+baseURL: "/"
 title: "Nodeschool Nish"
 languageCode: "en-us"
 
 permalinks:
   post: /:title/
 
+params:
+  AuthorName: "Mišel Tekinder"
+  GitHubUser: ""
 
 theme: 'nodeschool'
 defaultExtension: "html"
