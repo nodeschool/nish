@@ -1,6 +1,6 @@
 baseURL: "/"
 title: "Nodeschool Nish"
-languageCode: "en-us"
+languageCode: "sr"
 
 permalinks:
   post: /:title/

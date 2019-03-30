@@ -636,6 +636,11 @@ ul {
 .next-event__info__item {
   margin: 0;
 }
+.next-event__actions {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 .next-event__action {
   display: inline-block;
   position: relative;

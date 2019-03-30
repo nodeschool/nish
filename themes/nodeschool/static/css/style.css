@@ -528,7 +528,7 @@ a {
 a:hover,
 a:focus {
   outline: none;
-  color: #3af4fd;
+  text-decoration: underline;
 }
 ul {
   padding: 0 0 0 1.5em;
@@ -636,6 +636,11 @@ ul {
 .next-event__info__item {
   margin: 0;
 }
+.next-event__actions {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 .next-event__action {
   display: inline-block;
   position: relative;
@@ -644,6 +649,7 @@ ul {
 .next-event__action:hover,
 .next-event__action:focus {
   z-index: 500;
+  text-decoration: none;
 }
 .next-event__action__mentor {
   border-left: #08449c 1px solid;

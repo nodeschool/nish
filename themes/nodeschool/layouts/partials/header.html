@@ -27,37 +27,31 @@
     </div>
 
     <div class="header__introduction">
-      <h1 class="header__introduction__heading">Mi ti pomažemo da naučiš JavaScript</h1>
+      <h1 class="header__introduction__heading">Nauči JavaScript</h1>
       <p class="header__introduction__body">
-        <strong>NodeSchool Niš</strong> je mesečno okupljanje napravljeno da pomogne ljudima pri učenju JavaScript-a. Mi pomažemo ljudima sa svim nivoima znanja - od početnika do eksperata - otkrivanjem koje su mogućnosti JavaScript-a. Dođite, sa računarom i željom da učite, na naš sledeći događaj!
+        <strong>NodeSchool Niš</strong> je mesečno okupljanje sa ciljem da pomogne ljudima pri učenju JavaScript programskog jezika. Osobe svih nivoa znanja - od početnika do eksperata - su dobrodošle.
       </p>
     </div>
 
     <div class="next-event">
       <div class="next-event__description">
         {{ range first 1 .Site.Pages }}
-            {{if eq .Type "post" }}
-              <h2 class="next-event__heading">Naš sledeći događaj je {{ .Params.Datumnaslov }}</h2>
-              <ul class="next-event__info">
-                <li class="next-event__info__item">
-                  <strong class="strong--alt">Kada?</strong> {{ .Params.Datum }}
-                </li>
-                <li class="next-event__info__item">
-                  <strong class="strong--alt">Gde?</strong> {{ .Params.Mesto }}</a>
-                </li>
-                <li class="next-event__info__item">
-                  <strong class="strong--alt">Šta?</strong> {{ .Description }}
-                </li>
-              </ul>
-            {{ end }}
+          {{ if eq .Type "post" }}
+            <h2 class="next-event__heading">Sledeći dogadjaj: {{ .Params.Title }}</h2>
+            <ul class="next-event__info">
+              <li class="next-event__info__item">
+                <strong class="strong--alt">Kada?</strong> {{ .Params.Datum }}
+              </li>
+              <li class="next-event__info__item">
+                <strong class="strong--alt">Gde?</strong> {{ .Params.Mesto }}</a>
+              </li>
+            </ul>
           {{ end }}
+        {{ end }}
       </div>
       <nav class="next-event__actions">
-        <a class="next-event__action__learner next-event__action button" href="https:&#x2F;&#x2F;ti.to&#x2F;nodeschool-oakland&#x2F;nodeschool-oakland-march-2019">
-          Priavite se kao Predavač
-        </a><a class="next-event__action__mentor next-event__action button" href="https:&#x2F;&#x2F;github.com&#x2F;nodeschool&#x2F;oakland&#x2F;issues&#x2F;73">
-          Prijavite se kao Mentor
-        </a>
+        <a class="next-event__action__learner next-event__action button" href="">Priavite se kao učesnik</a>
+        <a class="next-event__action__mentor next-event__action button" href="">Prijavite se kao Mentor</a>
       </nav>
     </div>
   </div>
