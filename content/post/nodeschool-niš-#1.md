@@ -5,6 +5,7 @@ draft: false
 type: "post"
 datum: "20.07.2019 13:00"
 mesto: "Nikole Pašića 28, sprat 4, firma enjoy.ing"
-# mesto: "Nikole Pašića 28, sprat 4, firma enjoy.ing"
+ucesnici: https://www.facebook.com/events/1077305899141414/
+mentori: https://github.com/nodeschool/nish/issues/6
 ---
 

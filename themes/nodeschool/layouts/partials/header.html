@@ -49,10 +49,18 @@
           {{ end }}
         {{ end }}
       </div>
-      <nav class="next-event__actions">
-        <a class="next-event__action__learner next-event__action button" href="">Prijavi se kao učesnik</a>
-        <a class="next-event__action__mentor next-event__action button" href="">Prijavi se kao Mentor</a>
-      </nav>
+      {{ range first 1 .Site.Pages }}
+        {{ if eq .Type "post" }}
+          <nav class="next-event__actions">
+            {{ if (isset .Params "ucesnici") }}
+              <a class="next-event__action__learner next-event__action button" href="{{ .Params.Ucesnici }}" target="_blank">Prijavi se kao učesnik</a>
+            {{ end }}
+            {{ if isset .Params "mentori" }}
+              <a class="next-event__action__mentor next-event__action button" href="{{ .Params.Mentori }}" target="_blank">Prijavi se kao Mentor</a>
+            {{ end }}
+          </nav>
+        {{ end }}
+      {{ end }}
     </div>
   </div>
 </header>
